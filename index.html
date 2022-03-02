@@ -33,6 +33,18 @@
                
         </div>
     </nav>
+    <div id="loginmodel" class="modal fade" role="dialog" >
+        <div class="modal=dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -44,7 +56,8 @@
                     <img src="img/logo.png" alt="logo" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" href="#reserve" class="btn btn-warning col-12">Reserve   Table</a>
+                    <a role="button" href="#reserve" class="btn btn-warning col-12" data-toggle="tooltip" data-html="true" 
+                    title="Or call us at <br> <strong>+852 12345678</strong>" data-placement="bottom">Reserve   Table</a>
                 </div>
             </div>
         </div>
@@ -219,6 +232,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>
 
 </html>
